@@ -1,0 +1,20 @@
+<!--
+Sanitized documentation copy of the custom SafeLine Wazuh rule.
+
+Rule ID: 100100
+Level: 10
+Purpose: Identify SafeLine WAF events.
+
+Use the exact deployed rule in a private/local environment.
+Do not publish credentials or sensitive configuration.
+-->
+
+<group name="safeline,web_security,">
+
+    <rule id="100100" level="10">
+        <decoded_as>json</decoded_as>
+        <field name="source">^safeline$</field>
+        <description>SafeLine WAF detected a web security event</description>
+    </rule>
+
+</group>
